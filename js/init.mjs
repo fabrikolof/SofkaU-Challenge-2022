@@ -1,9 +1,9 @@
 // @ts-check
 
 // Github 
-const indexGithub = "https://fabrikolof.github.io/Sofka-CHALLENGE-/index.html";
-const gameGithub = "https://fabrikolof.github.io/Sofka-CHALLENGE-/game.html"
-const rankingGithub = "https://fabrikolof.github.io/Sofka-CHALLENGE-/ranking.html";
+const indexGithub = "https://fabrikolof.github.io/SofkaU-Challenge-2022/index.html";
+const gameGithub = "https://fabrikolof.github.io/SofkaU-Challenge-2022/game.html"
+const rankingGithub = "https://fabrikolof.github.io/SofkaU-Challenge-2022/ranking.html";
 // LocalHost
 const indexLocalHost = "http://127.0.0.1:5500/index.html";
 const gameLocalHost = "http://127.0.0.1:5500/game.html"
