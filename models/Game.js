@@ -36,7 +36,9 @@ export class Game {
     }
 
     endTheGameByPlayer() {
+        console.log(this.questionIndex)
         this.questionIndex = this.questions.length - 1;
+        console.log(this.questionIndex)
     }
 
     /**
