@@ -35,11 +35,11 @@ export class Game {
         this.questions.length === this.questionIndex - 1
     }
 
-    endTheGameByPlayer() {
-        console.log(this.questionIndex)
-        this.questionIndex = this.questions.length;
-        console.log(this.questionIndex)
-    }
+    // endTheGameByPlayer() {
+    //     console.log(this.questionIndex)
+    //     this.questionIndex = this.questions.length;
+    //     console.log(this.questionIndex)
+    // }
 
     /**
      * 

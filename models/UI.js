@@ -64,17 +64,17 @@ export class UI {
         document.getElementById("level").innerText = `Nivel: ${level}`
     }
 
-    /**
-     * 
-     * @param {callback} callback the function from the main object game where complete all the index of it to end it
-     */
-    showBtnEndGameByIndex(callback) {
-        const container = document.getElementById('game');
-        const button = document.createElement('button');
-        button.innerText = 'Salir';
-        button.className = 'button';
-        button.addEventListener('click', () => callback);
-        container.append(button);
-    }
+    // /**
+    //  * 
+    //  * @param {callback} callback the function from the main object game where complete all the index of it to end it
+    //  */
+    // showBtnEndGameByIndex(callback) {
+    //     const container = document.getElementById('game');
+    //     const button = document.createElement('button');
+    //     button.innerText = 'Salir';
+    //     button.className = 'button';
+    //     button.addEventListener('click', () => callback);
+    //     container.append(button);
+    // }
 }
 
