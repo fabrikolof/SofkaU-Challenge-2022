@@ -35,13 +35,8 @@ export class Game {
         this.questions.length === this.questionIndex - 1
     }
 
-    // Ends the game by the player
-    /**
-     * 
-     * @param {number} totalQuestions the total question in the game using lenght to obtain it
-     */
-    endTheGameByPlayer(totalQuestions) {
-        this.questionIndex = totalQuestions - 1;
+    endTheGameByPlayer() {
+        this.questionIndex = this.questions.length - 1;
     }
 
     /**
