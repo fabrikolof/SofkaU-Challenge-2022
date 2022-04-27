@@ -8,10 +8,7 @@ document.getElementById("ranking").addEventListener("click", () => {
 
 // Animation index with the play button
 
-//imagen de fondo
-//background-image: url("https://www.sofka.com.co/wp-content/uploads/2021/04/INTERNA-TEMA-5.jpg");
-//<i class="fa-regular fa-house-heart"></i>
-//<i class="fa-regular fa-heart"></i>
+//background img body and heart
 document.getElementById("img").addEventListener("mouseover", () => {
   document
   .getElementById("happy")
@@ -19,15 +16,21 @@ document.getElementById("img").addEventListener("mouseover", () => {
     "class",
     "fa-regular fa-heart animate__animated animate__heartBeat",
     );
-    // change background of the body
-    document
-    .getElementById("body")
-    .setAttribute(
-      "background-image",
-      "https://www.sofka.com.co/wp-content/uploads/2021/04/INTERNA-TEMA-5.jpg",
-      )
-
+  changeBackground()
 });
+document.getElementById("img").addEventListener("mouseout", () => {
+  document
+  .getElementById("happy")
+  .setAttribute(
+    "class",
+    "fa-regular fa-heart animate__animated animate__heartBeat",
+    );
+    document.body.style.background = 'url()';
+});
+
+function changeBackground() {
+  document.body.style.background = 'url(https://www.sofka.com.co/wp-content/uploads/2021/04/INTERNA-TEMA-5.jpg)';
+}
 
  document.getElementById("ranking").addEventListener("mouseover", () => {
   document
