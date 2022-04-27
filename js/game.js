@@ -36,8 +36,24 @@ function savePlayerData(game, ui) {
     let player = new Player(nombre);
     player.saveScore(game.score);
 
+
+
+    //--------------
+    // @ts-ignore
+    swal({
+      title: "Fin del juego!",
+      text: "Tu puntuación es de: " + game.score,
+      icon: "success",
+      button: "Salir!",
+      dangerMode: true,
+    }).then(function () {
+      // @ts-ignore
+      redirection(gameLocalHost, rankingLocalHost, rankingGithub);
+    });
+    //--------------
+
     //se redireciona sin quedarse mostrando el score
-    ui.showScores(game.score)
+    //ui.showScores(game.score)
     
   } else {
     // @ts-ignore
