@@ -36,7 +36,7 @@ export class UI {
         const gameEndHTML = `
             <h1>Result</h1>
             <h2>Your Score: ${score}</h2>
-            <a href=${redirection(currentLocalhost, reLocalhost, reGithub)} >Volver a jugar</a>
+            <a href=${redirection(gameLocalHost, indexLocalHost, indexGithub)} >Volver a jugar</a>
         `
         const element = document.getElementById('game')
         element.innerHTML = gameEndHTML;
