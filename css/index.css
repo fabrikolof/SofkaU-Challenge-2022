@@ -1,3 +1,7 @@
+body {
+    transition: background-image 3s ease-in-out;
+}
+
 .play {
 
     font-size: 15rem;

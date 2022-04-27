@@ -16,21 +16,17 @@ document.getElementById("img").addEventListener("mouseover", () => {
     "class",
     "fa-regular fa-heart animate__animated animate__heartBeat",
     );
-  changeBackground()
+    document.body.style.background = 'url(https://www.sofka.com.co/wp-content/uploads/2021/04/INTERNA-TEMA-5.jpg)';
 });
-document.getElementById("img").addEventListener("mouseout", () => {
-  document
-  .getElementById("happy")
-  .setAttribute(
-    "class",
-    "fa-regular fa-heart animate__animated animate__heartBeat",
-    );
-    document.body.style.background = '#272343';
+  document.getElementById("img").addEventListener("mouseout", () => {
+    document
+    .getElementById("happy")
+    .setAttribute(
+      "class",
+      "fa-regular fa-heart animate__animated animate__heartBeat",
+      );
+      document.body.style.background = '#272343';
 });
-
-function changeBackground() {
-  document.body.style.background = 'url(https://www.sofka.com.co/wp-content/uploads/2021/04/INTERNA-TEMA-5.jpg)';
-}
 
  document.getElementById("ranking").addEventListener("mouseover", () => {
   document
