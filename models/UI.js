@@ -69,12 +69,13 @@ export class UI {
      * @param {callback} callback the function from the main object game where complete all the index of it to end it
      */
     showBtnEndGameByIndex(callback) {
-        const container = document.getElementById('game');
+        const container = document.getElementById('rankingDiv');
         const button = document.createElement('button');
         button.innerText = 'Salir';
         button.className = 'button';
         button.addEventListener('click', () => callback());
-        container.append(button);
+        container.innerHTML = button;
+        //container.append(button);
     }
 }
 
