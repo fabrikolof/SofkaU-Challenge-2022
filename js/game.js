@@ -12,6 +12,7 @@ import { UI } from "../models/UI.js";
  */
 const renderPage = (game, ui) => {
   if (game.idEnded()) {
+    // the game ends
     savePlayerData(game, ui)
   } else {
     ui.showQuestion(game.getQuestionIndex().text);
@@ -30,10 +31,12 @@ const renderPage = (game, ui) => {
 };
 
 function savePlayerData(game, ui) {
-  let nombre = sessionStorage.getItem("name");
-  let player = new Player(nombre);
-  player.saveScore(game.score);
-  ui.showScores(game.score)
+  if(game.score > 0) {
+    let nombre = sessionStorage.getItem("name");
+    let player = new Player(nombre);
+    player.saveScore(game.score);
+    ui.showScores(game.score)
+  }
 }
 
 function main() {

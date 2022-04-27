@@ -40,10 +40,9 @@ export class Game {
      * @param {string} answer The guess of the question
      */
     guess(answer) {
-        console.log(this.getQuestionIndex().correctAnswer(answer))
+        //console.log(this.getQuestionIndex().correctAnswer(answer))
         if (this.getQuestionIndex().correctAnswer(answer)) {
             this.score += this.scorePoints[this.questionIndex];
-            
         } else {
             // @ts-ignore
             swal({
@@ -54,9 +53,10 @@ export class Game {
                 dangerMode: true,
               }).then(function () {
                 // @ts-ignore
-                window.location = "./game.html";
+                redirection(gameLocalHost, indexLocalHost, indexGithub);
               });
         }
+        
         this.questionIndex++ 
         
     }
