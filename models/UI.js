@@ -66,7 +66,7 @@ export class UI {
 
     /**
      * 
-     * @param {function()} callback the function from the main object game where complete all the index of it to end it
+     * @param {callback} callback the function from the main object game where complete all the index of it to end it
      */
     showBtnEndGameByIndex(callback) {
         const container = document.getElementById('game');
