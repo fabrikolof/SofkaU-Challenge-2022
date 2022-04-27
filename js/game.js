@@ -36,6 +36,18 @@ function savePlayerData(game, ui) {
     let player = new Player(nombre);
     player.saveScore(game.score);
     ui.showScores(game.score)
+  } else {
+    // @ts-ignore
+    swal({
+      title: "Game Over!",
+      text: "Tu puntuación no es suficiente para entrar al ranking",
+      icon: "warning",
+      button: "Salir!",
+      dangerMode: true,
+    }).then(function () {
+      // @ts-ignore
+      redirection(gameLocalHost, indexLocalHost, indexGithub);
+    });
   }
 }
 
