@@ -76,11 +76,11 @@ async function inputNombre(){
       inputPlaceholder: 'Nombre...'
     })
     
-    if (name) {
+    if (name != "") {
       sessionStorage.setItem("name", name)
-      redirection(indexLocalHost, gameLocalHost, gameGithub)
+      //redirection(indexLocalHost, gameLocalHost, gameGithub)
     }
-    
+
     validator = false;
 }
 
