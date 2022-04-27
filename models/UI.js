@@ -75,7 +75,7 @@ export class UI {
         button.className = 'button';
         button.addEventListener('click', () => callback());
 
-        container.innerHTML += button;
+        container.append(button);
     }
 }
 
