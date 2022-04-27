@@ -81,7 +81,7 @@ async function inputNombre(){
 }
 
 
-function inputNombre(){
+async function inputNombre(){
   let { value: name } = await Swal.fire({
       title: 'Comienza una gran aventura!',
       input: 'text',
