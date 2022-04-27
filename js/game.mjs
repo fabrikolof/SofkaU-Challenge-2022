@@ -28,11 +28,6 @@
 //   }
 // };
 
-// document.getElementById("salir").addEventListener("click", () => {
-//   redirection(gameLocalHost, rankingLocalHost, rankingGithub)
-// });
-
-
 // function main() {
 //   const game = new Game(random());
 //   const ui = new UI();
@@ -49,4 +44,6 @@
 console.log("funciona")
 
 
-
+document.getElementById("salir").addEventListener("click", () => {
+  redirection(gameLocalHost, rankingLocalHost, rankingGithub)
+});
