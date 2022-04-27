@@ -17,7 +17,11 @@ document.getElementById("img").addEventListener("mouseover", () => {
   .getElementById("happy")
   .setAttribute(
     "class",
-    "fa-regular fa-heart animate__animated animate__heartBeat"
+    "fa-regular fa-heart animate__animated animate__heartBeat",
+    )
+    .setAttribute(
+    "color",
+    "red",
     );
 });
 
