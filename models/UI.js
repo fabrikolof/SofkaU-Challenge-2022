@@ -73,7 +73,7 @@ export class UI {
         const button = document.createElement('button');
         button.innerText = 'Salir';
         button.className = 'button';
-        button.addEventListener('click', () => callback);
+        button.addEventListener('click', () => callback());
         container.append(button);
     }
 }
