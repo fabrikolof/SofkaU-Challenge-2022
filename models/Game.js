@@ -35,6 +35,11 @@ export class Game {
         this.questions.length === this.questionIndex - 1
     }
 
+    // Ends the game by the player
+    endTheGameByPlayer() {
+        this.questionIndex = this.questions.length - 1;
+    }
+
     /**
      * 
      * @param {string} answer The guess of the question

@@ -63,4 +63,19 @@ export class UI {
     showLevel(level) {
         document.getElementById("level").innerText = `Nivel: ${level}`
     }
+
+    /**
+     * 
+     * @param {function()} callback the function from the main object game where complete all the index of it to end it
+     */
+    showBtnEndGameByIndex(callback) {
+        const container = document.getElementsById("game");
+        const button = document.createElement("button");
+        button.innerText = "Salir";
+        button.className = 'button';
+        button.addEventListener('click', () => callback());
+
+        container += button;
+    }
 }
+

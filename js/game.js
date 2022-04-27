@@ -25,6 +25,8 @@ const renderPage = (game, ui) => {
     ui.showProgress(game.questionIndex + 1, game.questions.length);
     ui.showActualScore(game.score);
     ui.showLevel(game.questionIndex + 1)
+
+    ui.showBtnEndGameByIndex(game.endTheGameByPlayer);
   }
 };
 
@@ -33,19 +35,8 @@ function main() {
   const ui = new UI();
   renderPage(game, ui);
   
-    // Ends the game by the player
-  // function endGameByPlayer(game){
-  //   game.questionIndex = game.question.length - 1;
-  // }
-
-  document.getElementById("salir").addEventListener("click", () => {
-    game.questionIndex = game.questions.length - 1;
-  });
 }
 
+
 main();
-
-
-
-
 
