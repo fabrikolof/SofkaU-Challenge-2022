@@ -35,7 +35,10 @@ function savePlayerData(game, ui) {
     let nombre = sessionStorage.getItem("name");
     let player = new Player(nombre);
     player.saveScore(game.score);
+
+    //se redireciona sin quedarse mostrando el score
     ui.showScores(game.score)
+    
   } else {
     // @ts-ignore
     swal({
