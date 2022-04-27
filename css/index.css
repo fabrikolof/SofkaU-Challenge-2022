@@ -19,7 +19,7 @@
     background-image: none;
 }
 #img:hover {
-    color: black;
+    background: black;
     /* transition-timing-function: ease-in-out;
     background-image: url("https://www.sofka.com.co/wp-content/uploads/2021/04/INTERNA-TEMA-5.jpg"); */
 }
