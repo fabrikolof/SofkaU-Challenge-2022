@@ -1,5 +1,5 @@
 document.getElementById("btnJugar").addEventListener("click", function() {
-    if(sessionStorage.getItem("name") != null) {
+    if(sessionStorage.getItem("name") === null) {
         redirection(rankingLocalHost, gameLocalHost, gameGithub)
     } else {
         redirection(rankingLocalHost, indexLocalHost, indexGithub)
