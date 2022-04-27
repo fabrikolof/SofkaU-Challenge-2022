@@ -35,7 +35,7 @@ function savePlayerData(game, ui) {
     let nombre = sessionStorage.getItem("name");
     let player = new Player(nombre);
     player.saveScore(game.score);
-    //ui.showScores(game.score)
+    ui.showScores(game.score)
   } else {
     // @ts-ignore
     swal({
