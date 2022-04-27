@@ -12,6 +12,22 @@ document.getElementById("ranking").addEventListener("click", () => {
 
 
  // Animation index with the play button
+ document.getElementById("ranking").addEventListener("mouseover", () => {
+  document
+  .getElementById("play")
+  .setAttribute(
+    "class",
+    "fa-regular fa-circle-play play animate__animated animate__heartBeat"
+    );
+    document
+    .getElementById("happy")
+    .setAttribute(
+      "class",
+      "fa-regular fa-face-grin-wink animate__animated animate__flash"
+      );
+});
+
+
  document.getElementById("testplay").addEventListener("mouseover", () => {
    document
    .getElementById("play")
