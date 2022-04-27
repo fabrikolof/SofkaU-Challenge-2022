@@ -26,9 +26,8 @@ const renderPage = (game, ui) => {
     ui.showActualScore(game.score);
     ui.showLevel(game.questionIndex + 1)
     ui.showBtnEndGameByIndex( () => { 
-      console.log(game.questionIndex);
       game.questionIndex = game.questions.length - 1;
-      console.log(game.questionIndex);
+      renderPage(game, ui);
     });
   }
 };
