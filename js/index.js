@@ -9,7 +9,6 @@ document.getElementById("ranking").addEventListener("click", () => {
 })
 
 
-/**
  // Animation index with the play button
  document.getElementById("testplay").addEventListener("mouseover", () => {
    document
@@ -64,56 +63,35 @@ document.getElementById("ranking").addEventListener("click", () => {
               inputNombre()
             });
             
-*/
 
 
-// async function inputNombre(){
-//   let { value: name } = await Swal.fire({
-//       title: 'Comienza una gran aventura!',
-//       input: 'text',
-//       inputLabel: 'Escribe tu nombre',
-//       inputPlaceholder: 'Nombre...'
-//     })
+
+async function inputNombre(){
+  let { value: name } = await Swal.fire({
+      title: 'Comienza una gran aventura!',
+      input: 'text',
+      inputLabel: 'Escribe tu nombre',
+      inputPlaceholder: 'Nombre...'
+    })
     
-//     if (name) {
-//       sessionStorage.setItem("name", name)
-//       //window.location.href = 'game.html'
-//       window.location.href = "https://fabrikolof.github.io/Sofka-CHALLENGE-/game.html";
-//     }
-// }
+    if (name) {
+      sessionStorage.setItem("name", name)
+      redirection(indexLocalHost, gameLocalHost, gameGithub)
+    }
+}
 
 
-// function inputNombre(){
-//   let { value: name } = await Swal.fire({
-//       title: 'Comienza una gran aventura!',
-//       input: 'text',
-//       inputLabel: 'Escribe tu nombre',
-//       inputPlaceholder: 'Nombre...'
-//     })
-//     if (name) {
-//       sessionStorage.setItem("name", name)
-//       //window.location.href = 'game.html'
-//       window.location.href = "../game.html";
-//     }
-// }
+function inputNombre(){
+  let { value: name } = await Swal.fire({
+      title: 'Comienza una gran aventura!',
+      input: 'text',
+      inputLabel: 'Escribe tu nombre',
+      inputPlaceholder: 'Nombre...'
+    })
+    if (name) {
+      sessionStorage.setItem("name", name)
+      //window.location.href = 'game.html'
+      window.location.href = "../game.html";
+    }
+}
 
-//A continuacion una funcion cuando no contestas ninguna pregunta,
-// si obtienes cero no entras a la tabla de puntuaciones
-
-// function retreat() {
-//   if (points == 0) {
-//     swal("Tienes Cero Punto, No entras A la tabla de puntiación, Adiós.").then(
-//       function () {
-//         window.location = "../index.html";
-//       }
-//     );
-//     return;
-//   }
-//   nick = prompt(
-//     " Saliste Del Juego, Obtuviste " +
-//       points +
-//       " Puntos!\n Escribe Aqui Tu nick"
-//   );
-
-//   writeDB(nick, points);
-// }
