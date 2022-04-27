@@ -25,7 +25,7 @@ document.getElementById("img").addEventListener("mouseout", () => {
     "class",
     "fa-regular fa-heart animate__animated animate__heartBeat",
     );
-    document.body.style.background = 'url()';
+    document.body.style.background = '#272343';
 });
 
 function changeBackground() {
