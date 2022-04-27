@@ -18,11 +18,15 @@ document.getElementById("img").addEventListener("mouseover", () => {
   .setAttribute(
     "class",
     "fa-regular fa-heart animate__animated animate__heartBeat",
-    )
-    .setAttribute(
-    "color",
-    "red",
     );
+    // change background of the body
+    document
+    .getElementById("body")
+    .setAttribute(
+      "background-image",
+      "https://www.sofka.com.co/wp-content/uploads/2021/04/INTERNA-TEMA-5.jpg",
+      )
+
 });
 
  document.getElementById("ranking").addEventListener("mouseover", () => {
