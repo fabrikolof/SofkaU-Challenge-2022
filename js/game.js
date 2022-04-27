@@ -47,13 +47,8 @@ function savePlayerData(game, ui) {
       // @ts-ignore
       redirection(gameLocalHost, rankingLocalHost, rankingGithub);
     });
-    
-    // @ts-ignore
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6 }
-    });
+
+    fireworkDefault()
     
   } else {
     // @ts-ignore
@@ -69,6 +64,15 @@ function savePlayerData(game, ui) {
       redirection(gameLocalHost, indexLocalHost, indexGithub);
     });
   }
+}
+
+function fireworkDefault(){
+      // @ts-ignore
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
 }
 
 function main() {
