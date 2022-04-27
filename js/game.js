@@ -25,6 +25,7 @@ const renderPage = (game, ui) => {
     ui.showProgress(game.questionIndex + 1, game.questions.length);
     ui.showActualScore(game.score);
     ui.showLevel(game.questionIndex + 1)
+    ui.showBtnEndGameByIndex(() => console.log("hola"))
   }
 };
 

@@ -35,12 +35,6 @@ export class Game {
         this.questions.length === this.questionIndex - 1
     }
 
-    // endTheGameByPlayer() {
-    //     console.log(this.questionIndex)
-    //     this.questionIndex = this.questions.length;
-    //     console.log(this.questionIndex)
-    // }
-
     /**
      * 
      * @param {string} answer The guess of the question
