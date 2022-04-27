@@ -1,5 +1,10 @@
 document.getElementById("btnJugar").addEventListener("click", function() {
-    redirection(rankingLocalHost, gameLocalHost, gameGithub)
+    if(sessionStorage.getItem("name") != null) {
+        redirection(rankingLocalHost, gameLocalHost, gameGithub)
+    } else {
+        redirection(rankingLocalHost, indexLocalHost, indexGithub)
+    }
+    
   })
 document.getElementById("btnSalir").addEventListener("click", function() {
 redirection(rankingLocalHost, indexLocalHost, indexGithub)
