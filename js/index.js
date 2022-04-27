@@ -7,6 +7,19 @@ document.getElementById("ranking").addEventListener("click", () => {
 })
 
 // Animation index with the play button
+
+//imagen de fondo
+//background-image: url("https://www.sofka.com.co/wp-content/uploads/2021/04/INTERNA-TEMA-5.jpg");
+//<i class="fa-regular fa-house-heart"></i>
+document.getElementById("img").addEventListener("mouseover", () => {
+  document
+  .getElementById("happy")
+  .setAttribute(
+    "class",
+    "fa-regular fa-house-heart animate__animated animate__heartBeat"
+    );
+});
+
  document.getElementById("ranking").addEventListener("mouseover", () => {
   document
   .getElementById("play")
