@@ -27,6 +27,7 @@ const renderPage = (game, ui) => {
     ui.showLevel(game.questionIndex + 1)
     ui.showBtnEndGameByIndex( () => { 
       // El usuario se retira voluntaria mente
+      console.log("hola")
     });
   }
 };
