@@ -81,17 +81,3 @@ async function inputNombre(){
 }
 
 
-async function inputNombre(){
-  let { value: name } = await Swal.fire({
-      title: 'Comienza una gran aventura!',
-      input: 'text',
-      inputLabel: 'Escribe tu nombre',
-      inputPlaceholder: 'Nombre...'
-    })
-    if (name) {
-      sessionStorage.setItem("name", name)
-      //window.location.href = 'game.html'
-      window.location.href = "../game.html";
-    }
-}
-
