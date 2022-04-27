@@ -1,5 +1,5 @@
-import { Question } from "/models/Questions.js"
-import { data } from "./data.js"
+import { Question } from "https://fabrikolof.github.io/SofkaU-Challenge-2022/models/Questions.js"
+import { data } from "https://fabrikolof.github.io/SofkaU-Challenge-2022/data/data.js"
 
 const dataMaped = data.map(question => new Question(question.category, question.question, question.options, question.answer, question.difficulty))
 
