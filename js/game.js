@@ -1,9 +1,14 @@
 // @ts-check
-import { random } from "./data/questions.js";
-console.log("funciona")
-import { Game } from "./models/Game.js";
+
+console.log("funciona 1")
+import { random } from "../data/questions.js";
+console.log("funciona 2")
+import { Game } from "../models/Game.js";
+console.log("funciona 3")
 import { Player } from "../models/Player.js";
-import { UI } from "./models/UI.js";
+console.log("funciona 4")
+import { UI } from "../models/UI.js";
+console.log("funciona 5")
 
 
 /**
