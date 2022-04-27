@@ -9,9 +9,6 @@ const indexLocalHost = "http://127.0.0.1:5500/index.html";
 const gameLocalHost = "http://127.0.0.1:5500/game.html"
 const rankingLocalHost = "http://127.0.0.1:5500/ranking.html";
 
-
-
-
 // Check if we are in the localhost, if not it redirect to the github page
 /**
  * 
