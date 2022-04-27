@@ -33,8 +33,15 @@ function main() {
   const ui = new UI();
   renderPage(game, ui);
   
-}
+    // Ends the game by the player
+  // function endGameByPlayer(game){
+  //   game.questionIndex = game.question.length - 1;
+  // }
 
+  document.getElementById("salir").addEventListener("click", () => {
+    game.questionIndex = game.questions.length - 1;
+  });
+}
 
 main();
 
@@ -42,8 +49,3 @@ main();
 
 
 
-
-
-document.getElementById("salir").addEventListener("click", () => {
-  redirection(gameLocalHost, rankingLocalHost, rankingGithub)
-});
