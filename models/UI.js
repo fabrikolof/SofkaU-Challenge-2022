@@ -30,20 +30,6 @@ export class UI {
 
     /**
      * 
-     * @param {number} score the total score
-     */
-    showScores(score) {
-        const gameEndHTML = `
-            <h1>Score</h1>
-            <h2>Tu Score: ${score}</h2>
-            <a href=${redirection(gameLocalHost, indexLocalHost, indexGithub)} >Volver a jugar</a>
-        `
-        const element = document.getElementById('game')
-        element.innerHTML = gameEndHTML;
-    }
-
-    /**
-     * 
      * @param {number} currentIndex the current index of the game
      * @param {number} total the total questions
      */

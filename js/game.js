@@ -36,9 +36,6 @@ function savePlayerData(game, ui) {
     let player = new Player(nombre);
     player.saveScore(game.score);
 
-
-
-    //--------------
     // @ts-ignore
     swal({
       title: "Fin del juego!",
@@ -50,10 +47,13 @@ function savePlayerData(game, ui) {
       // @ts-ignore
       redirection(gameLocalHost, rankingLocalHost, rankingGithub);
     });
-    //--------------
-
-    //se redireciona sin quedarse mostrando el score
-    //ui.showScores(game.score)
+    
+    // @ts-ignore
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 }
+    });
     
   } else {
     // @ts-ignore
