@@ -1,0 +1,16 @@
+.play {
+
+    font-size: 15rem;
+    color: #34a3a3;
+    margin: 10px 40px 10px;
+}
+
+.play:hover {
+    transition: color 1s;
+    cursor: pointer;
+    color: blue;
+}
+
+.swal-overlay {
+    background-color: rgba(43, 165, 137, 0.45);
+  }
