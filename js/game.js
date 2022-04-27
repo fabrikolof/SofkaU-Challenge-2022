@@ -1,9 +1,9 @@
 // @ts-check
-import { random } from "../data/questions.mjs";
+import { random } from "./data/questions.js";
 console.log("funciona")
-import { Game } from "../models/Game.mjs";
-import { Player } from "../models/Player.mjs";
-import { UI } from "../models/UI.mjs";
+import { Game } from "./models/Game.js";
+import { Player } from "../models/Player.js";
+import { UI } from "./models/UI.js";
 
 
 /**

@@ -1,5 +1,5 @@
 // @ts-check
-import { Question } from './Questions.mjs'
+import { Question } from './Questions.js'
 
 export class Game {
 

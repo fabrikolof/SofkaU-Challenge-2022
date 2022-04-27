@@ -1,5 +1,5 @@
-import { Question } from "/models/Questions.mjs"
-import { data } from "./data.mjs"
+import { Question } from "/models/Questions.js"
+import { data } from "./data.js"
 
 const dataMaped = data.map(question => new Question(question.category, question.question, question.options, question.answer, question.difficulty))
 
