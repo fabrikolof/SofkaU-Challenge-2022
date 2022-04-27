@@ -1,3 +1,5 @@
+let validator = true;
+
 // Redirections
 document.getElementById("play").addEventListener("click", () => {
   redirection(indexLocalHost, gameLocalHost, gameGithub)
@@ -78,6 +80,8 @@ async function inputNombre(){
       sessionStorage.setItem("name", name)
       redirection(indexLocalHost, gameLocalHost, gameGithub)
     }
+    
+    validator = false;
 }
 
 
