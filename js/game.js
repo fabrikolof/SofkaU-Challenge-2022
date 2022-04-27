@@ -46,7 +46,7 @@ function savePlayerData(game, ui) {
       dangerMode: true,
     }).then(function () {
       // @ts-ignore
-      redirection(gameLocalHost, indexLocalHost, indexGithub);
+      //redirection(gameLocalHost, indexLocalHost, indexGithub);
     });
   }
 }
