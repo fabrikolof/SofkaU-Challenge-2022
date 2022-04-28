@@ -106,7 +106,7 @@ async function inputNombre(){
       redirection(indexLocalHost, gameLocalHost, gameGithub)
     }
 
-    validator = false;
+    validator = true;
 }
 
 
