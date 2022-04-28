@@ -58,14 +58,15 @@ document.getElementById("testplay").addEventListener("mouseover", () => {
     );
 });
     
+
 document.getElementById("testplay").addEventListener("mouseout", () => {
   document
   .getElementById("play")
   .setAttribute("class", "fa-regular fa-circle-play play");
-  happyFace();
+  cryingFace();
 });
       
-function happyFace() {
+function cryingFace() {
   if (validator === true) {
     document
     .getElementById("happy")
@@ -86,6 +87,7 @@ function loveFace() {
   }
 
 document.getElementById("testplay").addEventListener("click", () => {
+    validator = false;
     loveFace()
     inputNombre()
   });
