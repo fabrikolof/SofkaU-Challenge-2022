@@ -92,6 +92,7 @@ document.getElementById("testplay").addEventListener("click", () => {
 
 async function inputNombre(){
   let { value: name } = await Swal.fire({
+      allowOutsideClick: false,
       title: 'Comienza una gran aventura!',
       input: 'text',
       inputLabel: 'Escribe tu nombre',
