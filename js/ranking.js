@@ -1,8 +1,16 @@
 document.getElementById("btnJugar").addEventListener("click", function() {
     if(sessionStorage.getItem("name") === null) {
-        redirection(rankingLocalHost, gameLocalHost, gameGithub)
+        swal({
+            title: "Necesitas ingresar tu nombre para jugar!",
+            icon: "warning",
+            button: "Salir!",
+            dangerMode: true,
+            }).then(function () {
+            // @ts-ignore
+            redirection(rankingLocalHost, indexLocalHost, indexGithub)
+            });
     } else {
-        redirection(rankingLocalHost, indexLocalHost, indexGithub)
+        redirection(rankingLocalHost, gameLocalHost, gameGithub)
     }
     
   })
